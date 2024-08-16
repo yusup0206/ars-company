@@ -116,3 +116,21 @@ html::-webkit-scrollbar-thumb {
     scale: 1;
   }
 }
+
+.card .cardImg {
+  transition: 0.3s all ease;
+}
+
+.card:hover .cardImg {
+  animation: shake infinite ease alternate-reverse 1s;
+  transition: 0.3s all ease;
+}
+
+@keyframes shake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
